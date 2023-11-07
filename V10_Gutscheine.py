@@ -63,6 +63,8 @@ def laden_gutscheine():
 def pruefe_gutschein():
     kategorie = kategorie_pruef_combobox.get()
     nummer = int(pruef_entry.get())
+    
+    
     if nummer in gutscheine[kategorie]:
         if gutscheine[kategorie][nummer]:
             gutscheine[kategorie][nummer] = False
